@@ -33,7 +33,6 @@ const fetchPosts = async () => {
     }
 }
 
-
 const createPost = async () => {
     if (!newPost.value.title || !newPost.value.content) return
     try {
@@ -53,7 +52,6 @@ const deletePost = async (id) => {
         console.error('Gagal delete post:', error)
     }
 }
-
 
 onMounted(fetchPosts)
 </script>
